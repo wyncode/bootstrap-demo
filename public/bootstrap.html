@@ -23,8 +23,26 @@
   </head>
   <body>
     <h1>Hello, Twitter Bootstrap!</h1>
+    <p>The point of this livecoding exercise is:
+    <ul>
+      <li>To demonstrate how Bootstrap works.
+        <ul>
+          <li>Create nicely styled components without having to write much (if any) CSS and JavaScript!
+          <li>HTML (data-)attributes everywhere! 
+          <li>Accessibility
+        </ul>
+      </li>
+      <li>To demonstrate that Bootstrap's online documentation is often wrong or confusing.
+        <ul>
+          <li>...and how to work around those issues using the Chrome DevTools inspector.
+        </ul>
+      </li>
+      <li>To provide accurate sample code for some popular Bootstrap components.
+    </ul>
+    </p>
 
     <h2>Modals</h2>
+    <h4>The Bootstrap website sample code has no popup content</h4>
 
     <!-- Button to trigger a modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -70,7 +88,7 @@
       </div>
     </div>
 
-    <h4>These modals don't look the same when we copy-and-paste from the site, so we fixed them.</h4>
+    <h4>The Bootstrap website sample code shows empty popups</h4>
 
     <!-- Large modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
@@ -108,13 +126,13 @@
       </div>
     </div>
 
-    <h4>This button uses JavaScript to pop-up the modal.</h4>
-
+    <br><br>
     <button type="button" class="btn btn-primary btn-lg" id="jsModalButton">Launch modal with JavaScript</button>
 
     <h3>Dropdowns</h3>
 
-    <h4>Dropdown button (fixed menu)</h4>
+    <h4>Dropdown button</h4>
+    <h5>The bootstrap website sample code doesn't have an example menu</h5>
     <div class="dropdown">
       <button id="dLabel1" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
         Dropdown button trigger
@@ -129,7 +147,7 @@
       </ul>
     </div>
 
-    <h4>Dropdown link (fixed menu)</h4>
+    <h4>Dropdown link</h4>
     <div class="dropdown">
       <a id="dLabel2" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
         Dropdown link trigger
@@ -154,13 +172,16 @@
     </div>
 
     <h3>Tooltips</h3>
+    <h5>Requires JavaScript opt-in</h5>
 
     <h4>Tooltips in a paragraph</h4>
+    <h5>Bootstrap doesn't provide sample code for this, so we stole it from their source code.</h5>
 
     <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="" data-original-title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="" data-original-title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
     </p>
 
     <h4>Tooltip buttons</h4>
+    <h5>The website sample code needs to be wrapped in a centered div</h5>
     <div style="text-align: center">
 
       <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
