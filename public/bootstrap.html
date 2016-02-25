@@ -29,7 +29,7 @@
         <ul>
           <li>Create nicely styled components without having to write much (if any) CSS and JavaScript!
           <li>HTML (data-)attributes everywhere! 
-          <li>Accessibility
+          <li>Accessibility attributes
         </ul>
       </li>
       <li>To demonstrate that Bootstrap's online documentation is often wrong or confusing.
@@ -42,7 +42,7 @@
     </p>
 
     <h2>Modals</h2>
-    <h4>The Bootstrap website sample code has no popup content</h4>
+    <p>The Bootstrap website sample code has no popup content. We used DevTools to reverse-engineer how the site does it.</p>
 
     <!-- Button to trigger a modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -88,8 +88,6 @@
       </div>
     </div>
 
-    <h4>The Bootstrap website sample code shows empty popups</h4>
-
     <!-- Large modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
 
@@ -130,20 +128,21 @@
     <button type="button" class="btn btn-primary btn-lg" id="jsModalButton">Launch modal with JavaScript</button>
 
     <h3>Dropdowns</h3>
+    <p>The bootstrap website sample code doesn't have an example menu, so we reversed engineered it.</p>
 
     <h4>Dropdown button</h4>
-    <h5>The bootstrap website sample code doesn't have an example menu</h5>
+    <p>This button was unstyled, so we styled it.</p>
     <div class="dropdown">
-      <button id="dLabel1" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+      <button id="dLabel1" type="button" class="btn btn-primary btn-lrg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
         Dropdown button trigger
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+        <li><a href="#">Action</a></li> 
+        <li><a href="#">Another action</a></li> 
+        <li><a href="#">Something else here</a></li> 
+        <li role="separator" class="divider"></li> 
+        <li><a href="#">Separated link</a></li> </ul>
       </ul>
     </div>
 
@@ -155,24 +154,25 @@
       </a>
 
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+        <li><a href="#">Action</a></li> 
+        <li><a href="#">Another action</a></li> 
+        <li><a href="#">Something else here</a></li> 
+        <li role="separator" class="divider"></li> 
+        <li><a href="#">Separated link</a></li> </ul>
       </ul>
     </div>
 
     <h4>Dropdown JavaScript button</h4>
+    <p>This triggers an animated dropdown effect, even though the regular one isn't. The animation end-state breaks the non-JS dropdown.</p>
     <div class="dropdown">
-      <button id="jsDropdownButton" type="button" aria-haspopup="true" role="button" aria-expanded="false">
+      <button id="jsDropdownButton" type="button" aria-haspopup="true" role="button" aria-expanded="false" data-toggle="dropdown">
         Dropdown trigger with JavaScript
         <span class="caret"></span>
       </button>
     </div>
 
     <h3>Tooltips</h3>
-    <h5>Requires JavaScript opt-in</h5>
+    <p>Requires JavaScript opt-in</p>
 
     <h4>Tooltips in a paragraph</h4>
     <h5>Bootstrap doesn't provide sample code for this, so we stole it from their source code.</h5>
@@ -181,8 +181,8 @@
     </p>
 
     <h4>Tooltip buttons</h4>
-    <h5>The website sample code needs to be wrapped in a centered div</h5>
-    <div style="text-align: center">
+    <p>The website sample code needs to be wrapped in a centered div so you can see the left tooltip</p>
+    <div class="text-center">
 
       <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
 
@@ -193,6 +193,7 @@
       <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
     </div>
 
+    <p>Needs some space on the bottom to see the bottom tooltip.</p>
     <br><br>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
